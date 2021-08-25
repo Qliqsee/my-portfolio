@@ -1,0 +1,17 @@
+@import '../../global.scss';
+
+.right-sec {
+  width: 50%;
+  box-sizing: border-box;
+  color: $lightColor;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+
+  @include mobile {
+    display: none;
+  }
+}

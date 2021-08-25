@@ -1,0 +1,20 @@
+//colors
+$lightColor: whitesmoke;
+$midColor: #808080;
+$darkColor: #16161a;
+
+//media query
+$width: 968px;
+$bwidth: 969px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media (min-width: #{$bwidth}) {
+    @content;
+  }
+}

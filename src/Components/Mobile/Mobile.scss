@@ -1,0 +1,46 @@
+@import '../../global.scss';
+
+.mobile-intro {
+  @include pc {
+    display: none;
+  }
+  width: 100%;
+  max-height: 100vh;
+  padding: 0 7vw;
+  box-sizing: border-box;
+  color: $lightColor;
+  display: flex;
+  flex-direction: column;
+
+  .section-1 {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      font-size: 25px;
+      font-weight: 500;
+    }
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 20px;
+      transform: translateY(5);
+      cursor: pointer;
+      span {
+        background-color: white;
+        height: 1px;
+      }
+      .line-1 {
+        width: 40px;
+      }
+      .line-2 {
+        width: 30px;
+      }
+      .line-3 {
+        width: 20px;
+      }
+    }
+  }
+}
