@@ -1,0 +1,48 @@
+@import '../../global.scss';
+
+.mHeader {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 20px;
+    transform: translateY(5);
+    background: transparent;
+    span {
+      background-color: white;
+      transition: all 0.5s ease;
+      height: 1px;
+      transform-origin: left;
+    }
+    .line-1 {
+      width: 40px;
+    }
+    .line-2 {
+      width: 30px;
+    }
+    .line-3 {
+      width: 20px;
+    }
+  }
+  &.active {
+    .line-1 {
+      width: 27px;
+      transform: rotate(45deg);
+    }
+    .line-2 {
+      opacity: 0;
+    }
+    .line-3 {
+      transform: rotate(-45deg);
+      width: 27px;
+    }
+  }
+}
