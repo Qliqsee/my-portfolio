@@ -17,9 +17,9 @@ export default function Into() {
         </span>
         <p>
           I'm a <span>frontend developer</span>. I create interactive{' '}
-          <span>experiences</span> for amazing people using{' '}
-          <span>technology</span>. I enjoy tweaking <span>stylesheets</span> and
-          crafting layouts to achieve desired aesthetics.
+          experiences for amazing people using <span>technology</span>. I enjoy
+          tweaking <span>stylesheets</span> and crafting layouts to achieve
+          desired aesthetics.
         </p>
       </div>
 
