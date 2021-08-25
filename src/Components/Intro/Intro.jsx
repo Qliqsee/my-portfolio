@@ -1,7 +1,8 @@
 import './Intro.scss';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { GitHub, Twitter } from '@material-ui/icons';
 import LaunchIcon from '@material-ui/icons/Launch';
+import Avatar from '../Avatar/Avatar';
 
 export default function Into() {
   const [selected, setSelected] = useState('work');
@@ -49,10 +50,7 @@ export default function Into() {
       </div>
 
       <div className='social section-3'>
-        <span
-          className='rounded'
-          style={{ backgroundImage: 'url(images/hacker.png)' }}
-        ></span>
+        <Avatar width={35} height={35} />
         <span className='s-icons'>
           <GitHub style={{ fontSize: 15 }} />{' '}
           <span>

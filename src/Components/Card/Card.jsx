@@ -16,11 +16,13 @@ export default function Card() {
       </div>
       <div className='section-3'>
         <span className='live min-font'>
-          <Visibility style={{ fontSize: 15, transform: 'translateY(2px)' }} />{' '}
+          <Visibility
+            style={{ fontSize: 15, transform: 'translateY(3.5px)' }}
+          />{' '}
           Live
         </span>
         <span className='code min-font'>
-          <Code style={{ fontSize: 15, transform: 'translateY(2px)' }} /> code
+          <Code style={{ fontSize: 15, marginBottom: '-3.5px' }} /> code
         </span>
       </div>
     </div>

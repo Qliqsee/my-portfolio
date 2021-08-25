@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import './MobileHeader.scss';
 
-export default function MobileHeader() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+export default function MobileHeader({ menuOpen, setMenuOpen }) {
   function toggleMenu() {
     setMenuOpen(!menuOpen);
   }
