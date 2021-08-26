@@ -1,20 +1,18 @@
 @import '../../global.scss';
 
 .slider {
-  display: flex;
+  display: none;
   height: 90vh;
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
-  opacity: 0;
   transition: all 0.5s ease-in-out;
-  position: fixed;
   bottom: 0;
   background-color: #101011;
 
   .navigation {
-    display: flex;
     flex-direction: column;
+    display: flex;
     justify-content: space-between;
     height: 220px;
     align-items: center;
@@ -42,6 +40,6 @@
   }
   &.active {
     display: flex;
-    opacity: 1;
+    position: fixed;
   }
 }
