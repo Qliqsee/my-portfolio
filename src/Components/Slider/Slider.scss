@@ -2,12 +2,11 @@
 
 .slider {
   display: none;
-  height: 90vh;
+  height: 80%;
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
   transition: all 0.5s ease-in-out;
-  bottom: 0;
   background-color: #101011;
 
   .navigation {
@@ -41,5 +40,6 @@
   &.active {
     display: flex;
     position: fixed;
+    bottom: 0;
   }
 }
