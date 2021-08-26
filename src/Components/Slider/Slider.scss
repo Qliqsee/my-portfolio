@@ -2,14 +2,15 @@
 
 .slider {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   flex-direction: column;
   justify-content: space-around;
   opacity: 0;
   transition: all 0.5s ease-in-out;
   position: fixed;
-  background-color: $darkColor;
+  bottom: 0;
+  background-color: #101011;
 
   .navigation {
     display: flex;

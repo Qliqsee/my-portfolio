@@ -2,7 +2,6 @@
 
 .app {
   width: 100%;
-  background-color: #101011;
   height: 100vh;
   box-sizing: border-box;
   display: flex;
@@ -11,6 +10,6 @@
   margin: 0;
 
   @include mobile {
-    padding-top: 0px;
+    padding: 0;
   }
 }

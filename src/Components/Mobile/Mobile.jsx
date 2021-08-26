@@ -11,27 +11,34 @@ export default function Mobile() {
 
   return (
     <div className='mobile-intro'>
-      <MobileHeader menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Slider menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <div className='container'>
-        <div className='avatar'></div>
-        <Avatar width={100} height={100} />
-        <div className='intro-text'>Hello, I'm Agboola Iyanu</div>
-        <div className='description'>
-          <p>
-            I'm a frontend developer. I create interactive experiences for
-            amazing people using technology. I enjoy tweaking stylesheets and
-            crafting layouts to achieve desired aesthetics.
-          </p>
-        </div>
-        <div className='explore'>
-          <span>
-            Explore{' '}
-            <ArrowRight style={{ fontSize: 22, marginBottom: '-5px' }} />
-          </span>
+      <div className='section-1'>
+        <MobileHeader menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      </div>
+      <div className='section-2'>
+        <div className='container'>
+          <div className='avatar'></div>
+          <Avatar width={100} height={100} />
+          <div className='intro-text'>Hello, I'm Agboola Iyanu</div>
+          <div className='description'>
+            <p>
+              I'm a frontend developer. I create interactive experiences for
+              amazing people using technology. I enjoy tweaking stylesheets and
+              crafting layouts to achieve desired aesthetics.
+            </p>
+          </div>
+          <div className='explore'>
+            <span>
+              Explore{' '}
+              <ArrowRight style={{ fontSize: 22, marginBottom: '-5px' }} />
+            </span>
+          </div>
         </div>
       </div>
-      <MobileFooter />
+      <div className='section-3'>
+        <MobileFooter />
+      </div>
+
+      <Slider menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </div>
   );
 }
