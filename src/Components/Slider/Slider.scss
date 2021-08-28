@@ -3,17 +3,16 @@
 .slider {
   display: flex;
   position: absolute;
-  height: 0;
-  z-index: -10;
-  // opacity: 0;
+  height: 100%;
+  z-index: 10;
   width: 100%;
   flex-direction: column;
-  // justify-content: space-around;
-  transition: all 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   background-color: #101011;
   align-items: center;
   box-sizing: border-box;
-  // padding-bottom: 100px;
+  opacity: 0;
+  top: -100%;
 
   .navigation {
     flex-direction: column;
@@ -53,8 +52,7 @@
     }
   }
   &.active {
-    z-index: 10;
-    height: 100vh;
-    padding-bottom: 100px;
+    top: 0;
+    opacity: 1;
   }
 }
