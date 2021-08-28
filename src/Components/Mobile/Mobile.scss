@@ -17,30 +17,40 @@
     margin-top: 50px;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 100px;
-    .intro-text {
-      font-size: 26px;
-      font-weight: 500;
-      margin-top: 25px;
-    }
-    .description {
-      padding: 0 30px;
-      text-align: center;
-      p {
-        line-height: 1.8;
-        color: $midColor;
+  .section-2 {
+    margin-top: -40px;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 100px;
+      .intro-text {
+        font-size: 26px;
+        font-weight: 500;
+        margin-top: 25px;
+        text-align: center;
       }
-    }
-    .explore {
-      padding: 10px 30px;
-      color: whitesmoke;
-      background-color: $darkColor;
-      display: inline-block;
+      .description {
+        padding: 0 30px;
+        text-align: center;
+        p {
+          line-height: 1.8;
+          color: $midColor;
+          transition: all 2s;
+
+          &.active {
+            color: whitesmoke;
+          }
+        }
+      }
+      .explore {
+        padding: 10px 30px;
+        color: whitesmoke;
+        background-color: $darkColor;
+        display: inline-block;
+      }
     }
   }
 }

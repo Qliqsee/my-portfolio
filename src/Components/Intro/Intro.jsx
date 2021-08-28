@@ -1,5 +1,5 @@
 import './Intro.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { GitHub, Twitter } from '@material-ui/icons';
 import LaunchIcon from '@material-ui/icons/Launch';
 import Avatar from '../Avatar/Avatar';
@@ -9,13 +9,20 @@ export default function Into() {
   function getId(e) {
     setSelected(e.target.id);
   }
+  const [truthy, setTruthy] = useState(false);
+  useEffect(() => {
+    setTruthy(true);
+    setTimeout(() => {
+      setTruthy(false);
+    }, 3000);
+  }, []);
   return (
     <div className='intro'>
       <div className='section-1'>
         <span className='span'>
           Hello, I'm <br /> Agboola Iyanu.
         </span>
-        <p>
+        <p className={`${truthy ? 'active' : ''}`}>
           I'm a <span>frontend developer</span>. I create interactive{' '}
           experiences for amazing people using <span>technology</span>. I enjoy
           tweaking <span>stylesheets</span> and crafting layouts to achieve

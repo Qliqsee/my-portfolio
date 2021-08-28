@@ -10,16 +10,13 @@
   flex-direction: column;
   // justify-content: space-around;
   transition: all 0.5s ease-in-out;
-  background-color: $darkColor;
+  background-color: #101011;
   align-items: center;
   box-sizing: border-box;
-  // padding: 0px 10px;
 
   .navigation {
     flex-direction: column;
     display: flex;
-    // justify-content: space-between;
-    // height: 200px;
     align-items: center;
     margin-top: 50px;
     font-weight: 300;
@@ -53,10 +50,7 @@
     }
   }
   &.active {
-    // display: flex;
-    // position: absolute;
     z-index: 10;
     height: 100%;
-    // opacity: 1;
   }
 }

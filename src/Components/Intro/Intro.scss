@@ -23,13 +23,15 @@
   p {
     line-height: 2.2;
     font-size: 1.2vw;
-
+    transition: all 2s;
+    &.active {
+      color: $midColor;
+    }
     span {
       color: $midColor;
     }
   }
   .home-nav {
-    margin-top: 60px;
     display: inline-block;
     flex-direction: column;
     justify-content: space-between;
@@ -69,8 +71,6 @@
     }
   }
   .social {
-    margin-top: 50px;
-    margin-bottom: 30px;
     .s-icons {
       margin-right: 50px;
 
