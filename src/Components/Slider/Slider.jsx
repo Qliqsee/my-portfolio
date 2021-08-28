@@ -1,11 +1,11 @@
 import './Slider.scss';
 import { GitHub, Twitter, LinkedIn } from '@material-ui/icons';
+import MobileHeader from '../MobileHeader/MobileHeader';
 
-import React from 'react';
-
-export default function Slider({ menuOpen, setMenuOPen }) {
+export default function Slider({ menuOpen, setMenuOpen }) {
   return (
     <div className={`${menuOpen ? 'slider active ' : 'slider'}`}>
+      <MobileHeader menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <ul className='navigation'>
         <li>Home</li>
         <li>Work</li>
