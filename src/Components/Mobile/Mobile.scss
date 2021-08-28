@@ -10,8 +10,10 @@
   color: $lightColor;
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
-  min-height: 100vh;
+  justify-content: space-between;
+  height: 100vh;
+  position: absolute;
+  top: 0;
 
   .section-2 {
     margin-top: -60px;
