@@ -26,7 +26,7 @@ export default function Mobile() {
         <div className='container'>
           <div className='avatar'></div>
           <Avatar width={100} height={100} />
-          <div className='intro-text'>Hello, I'm Agboola Iyanu</div>
+          <div className='intro-text'>Hello, I'm Agboola Iyanu.</div>
           <div className='description'>
             <p className={`${truthy ? 'active' : ''}`}>
               I'm a frontend developer. I create interactive experiences for

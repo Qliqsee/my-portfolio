@@ -18,7 +18,7 @@
   }
 
   .section-2 {
-    margin-top: -40px;
+    margin-top: -60px;
 
     .container {
       display: flex;
@@ -27,7 +27,7 @@
       justify-content: space-between;
       margin-top: 100px;
       .intro-text {
-        font-size: 26px;
+        font-size: 23px;
         font-weight: 500;
         margin-top: 25px;
         text-align: center;
@@ -38,6 +38,7 @@
         p {
           line-height: 1.8;
           color: $midColor;
+          font-size: 14px;
           transition: all 2s;
 
           &.active {
