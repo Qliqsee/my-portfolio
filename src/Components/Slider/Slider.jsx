@@ -5,7 +5,7 @@ import MobileHeader from '../MobileHeader/MobileHeader';
 export default function Slider({ menuOpen, setMenuOpen }) {
   return (
     <div className={`${menuOpen ? 'slider active ' : 'slider'}`}>
-      <MobileHeader menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      {/* <MobileHeader menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
       <ul className='navigation'>
         <li>Home</li>
         <li>Work</li>
