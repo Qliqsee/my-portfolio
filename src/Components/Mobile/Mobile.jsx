@@ -42,8 +42,9 @@ export default function Mobile() {
           </div>
         </div>
       </div>
-      <div className='section-3'></div>
-      <MobileFooter />
+      <div className='section-3'>
+        <MobileFooter />
+      </div>
 
       <Slider menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </div>
